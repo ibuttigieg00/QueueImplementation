@@ -1,10 +1,12 @@
 public class Main {
     public static void main (String [] args){
-        RegularQueue queue = new RegularQueue(3);
+        RegularQueue queue = new RegularQueue(4);
+        System.out.println(queue.Enqueue(5));
+        System.out.println(queue.Enqueue(8));
         System.out.println(queue.Enqueue(1));
-        System.out.println(queue.Enqueue(2));
-        System.out.println(queue.Enqueue(3));
         System.out.println(queue.Enqueue(4));
+        queue.insertionSort();
+        queue.showQueue();
         System.out.println(queue.Dequeue());
         System.out.println(queue.Enqueue(4));
         CircularQueue circularQueue = new CircularQueue(3);
